@@ -1,19 +1,24 @@
-# tasky-vue
+# electron-vue3-demo
 
-## Project setup
+## 搭建
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### 开发环境
 ```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
+npm run electron:serve
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 生产环境
+```
+npm run electron:build
+```
+
+### 调试
+1. 配置文件：见 .vscode
+2. 启动方式：运行和调试->Electron:All->调试主进程(注意，首次启动后需要手动刷新才能触发断点)
+3. 渲染进程调试：chrome中访问 localhost:9223 ->选择目标页面->控制台断点调试
+
+<!-- ### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/). -->
